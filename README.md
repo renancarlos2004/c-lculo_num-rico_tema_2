@@ -33,7 +33,7 @@ orientada a objetos.
 
 ## Diagrama de classes
 
-![Diagrama de classes] <img width="2250" height="2058" alt="Image" src="https://github.com/user-attachments/assets/61ab7e8c-61ff-4729-ba86-f06ed2bf9cfd">
+<img width="2250" height="2058" alt="Image" src="https://github.com/user-attachments/assets/61ab7e8c-61ff-4729-ba86-f06ed2bf9cfd">
 
 ## Estrutura do código
 
