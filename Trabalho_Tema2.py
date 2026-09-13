@@ -37,12 +37,12 @@ class MetodoNumerico(ABC):
 # =============================================================================
 
 class Bissecao(MetodoNumerico):
-    """
-    Implementação do Método da Bisseção.
+    #"""
+    #Implementação do Método da Bisseção.
 
-    O método divide o intervalo ao meio e mantém
-    o subintervalo que contém a raiz.
-    """
+    #O método divide o intervalo ao meio e mantém
+    #o subintervalo que contém a raiz.
+    #"""
 
     def executar(
         self,
@@ -253,10 +253,10 @@ class NewtonRaphson(MetodoNumerico):
 # =============================================================================
 
 class AnalisadorMovimento:
-    """
-    Classe responsável por executar os métodos numéricos
-    para cada movimento e mostrar os resultados.
-    """
+    #"""
+    #Classe responsável por executar os métodos numéricos
+    #para cada movimento e mostrar os resultados.
+    #"""
 
     def __init__(
         self,
@@ -536,8 +536,8 @@ def f_prime(
 
 if __name__ == "__main__":
 
-    # Entrada de dados.
-    # Número de movimentos.
+    #Entrada de dados.
+    #Número de movimentos.
     n = int(input("Digite o número de movimentos: "))
     lista_a = []
 
