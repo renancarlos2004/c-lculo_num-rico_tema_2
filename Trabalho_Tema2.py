@@ -8,9 +8,9 @@ from typing import Callable, List, Dict, Any, Tuple
 # =============================================================================
 
 class MetodoNumerico(ABC):
-    """
-    Classe abstrata para os métodos numéricos utilizados no trabalho.
-    """
+    
+    #Classe abstrata para os métodos numéricos utilizados no trabalho.
+    
 
     def __init__(
         self,
@@ -37,12 +37,12 @@ class MetodoNumerico(ABC):
 # =============================================================================
 
 class Bissecao(MetodoNumerico):
-    """
-    Implementação do Método da Bisseção.
+    
+    #Implementação do Método da Bisseção.
 
-    O método divide o intervalo ao meio e mantém
-    o subintervalo que contém a raiz.
-    """
+    #O método divide o intervalo ao meio e mantém
+    #o subintervalo que contém a raiz.
+    
 
     def executar(
         self,
@@ -143,13 +143,13 @@ class Bissecao(MetodoNumerico):
 # =============================================================================
 
 class NewtonRaphson(MetodoNumerico):
-    """
-    Implementação do Método de Newton-Raphson.
+    
+    #Implementação do Método de Newton-Raphson.
 
-    Fórmula:
+    #Fórmula:
 
-        d_(k+1) = d_k - f(d_k) / f'(d_k)
-    """
+        #d_(k+1) = d_k - f(d_k) / f'(d_k)
+    
 
     def __init__(
         self,
@@ -253,10 +253,10 @@ class NewtonRaphson(MetodoNumerico):
 # =============================================================================
 
 class AnalisadorMovimento:
-    """
-    Classe responsável por executar os métodos numéricos
-    para cada movimento e mostrar os resultados.
-    """
+    
+    #Classe responsável por executar os métodos numéricos
+    #para cada movimento e mostrar os resultados.
+    
 
     def __init__(
         self,
