@@ -547,18 +547,18 @@ if __name__ == "__main__":
         )
         lista_a.append(valor_a)
 
-    inicio = float(
-        input("Digite o inicio do intervalo de isolamento: ")
-    )
-    fim = float(
-        input("Digite o fim do intervalo de isolamento: ")
-    )
+        inicio = float(
+            input("Digite o inicio do intervalo de isolamento: ")
+        )
+        fim = float(
+            input("Digite o fim do intervalo de isolamento: ")
+        )
 
-    isolamento = (inicio, fim)
+        isolamento = (inicio, fim)
 
-    eps = float(
+        eps = float(
             input("Digite a precisao (epsilion): ")
-    )
+        )
 
 #Cria o analisador.
 analisador = AnalisadorMovimento(
