@@ -37,12 +37,12 @@ class MetodoNumerico(ABC):
 # =============================================================================
 
 class Bissecao(MetodoNumerico):
-    #"""
-    #Implementação do Método da Bisseção.
+    """
+    Implementação do Método da Bisseção.
 
-    #O método divide o intervalo ao meio e mantém
-    #o subintervalo que contém a raiz.
-    #"""
+    O método divide o intervalo ao meio e mantém
+    o subintervalo que contém a raiz.
+    """
 
     def executar(
         self,
@@ -253,10 +253,10 @@ class NewtonRaphson(MetodoNumerico):
 # =============================================================================
 
 class AnalisadorMovimento:
-    #"""
-    #Classe responsável por executar os métodos numéricos
-    #para cada movimento e mostrar os resultados.
-    #"""
+    """
+    Classe responsável por executar os métodos numéricos
+    para cada movimento e mostrar os resultados.
+    """
 
     def __init__(
         self,
@@ -536,8 +536,8 @@ def f_prime(
 
 if __name__ == "__main__":
 
-    #Entrada de dados.
-    #Número de movimentos.
+    # Entrada de dados.
+    # Número de movimentos.
     n = int(input("Digite o número de movimentos: "))
     lista_a = []
 
@@ -547,29 +547,31 @@ if __name__ == "__main__":
         )
         lista_a.append(valor_a)
 
-        inicio = float(
-            input("Digite o inicio do intervalo de isolamento: ")
-        )
-        fim = float(
-            input("Digite o fim do intervalo de isolamento: ")
-        )
+    # Intervalo de isolamento e precisão são únicos para toda a análise,
+    # pois AnalisadorMovimento.executar() recebe um só intervalo/precisão
+    # para todos os movimentos da lista.
+    inicio = float(
+        input("Digite o início do intervalo de isolamento: ")
+    )
+    fim = float(
+        input("Digite o fim do intervalo de isolamento: ")
+    )
 
-        isolamento = (inicio, fim)
+    isolamento = (inicio, fim)
 
-        eps = float(
-            input("Digite a precisao (epsilion): ")
-        )
+    eps = float(
+        input("Digite a precisão (epsilon): ")
+    )
 
-#Cria o analisador.
-analisador = AnalisadorMovimento(
-    f,
-    f_prime
-)
-#Executa o programa
-analisador.executar(
-    lista_a=lista_a,
-    intervalo=isolamento,
-    precisao=eps
-)
-    
+    # Cria o analisador.
+    analisador = AnalisadorMovimento(
+        f,
+        f_prime
+    )
 
+    # Executa o programa
+    analisador.executar(
+        lista_a=lista_a,
+        intervalo=isolamento,
+        precisao=eps
+    )
