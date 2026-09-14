@@ -67,7 +67,7 @@ class Bissecao(MetodoNumerico):
         # Valor anterior utilizado para calcular o erro relativo
         anterior = None
 
-        k = 1
+        k = 1 #número de movimentos
 
         while True:
 
@@ -405,11 +405,11 @@ class AnalisadorMovimento:
             print("\n[ISOLAMENTO]")
 
             print(
-                f"f({inicio}) = {f_inicio:.8f}"
+                f"f({inicio}) = {f_inicio:.4f}"
             )
 
             print(
-                f"f({fim}) = {f_fim:.8f}"
+                f"f({fim}) = {f_fim:.4f}"
             )
 
             # Verifica se existe mudança de sinal
@@ -455,7 +455,7 @@ class AnalisadorMovimento:
 
                 print(
                     f"\nValor de d calculado: "
-                    f"{resultado_bissecao['raiz']:.8f}"
+                    f"{resultado_bissecao['raiz']:.4f}"
                 )
 
             except ValueError as erro:
@@ -486,7 +486,7 @@ class AnalisadorMovimento:
 
                 print(
                     f"\nValor de d calculado: "
-                    f"{resultado_newton['raiz']:.8f}"
+                    f"{resultado_newton['raiz']:.4f}"
                 )
 
             except ValueError as erro:
